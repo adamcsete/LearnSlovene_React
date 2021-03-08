@@ -6,13 +6,15 @@ import React from 'react';
 function Menu(){
     return (
         <div className = "menuBar">
-            <p>Tanuljunk szlovénül</p>
+            <p className = "p">Tanuljunk szlovénül</p>
             <div className="dropdown">
                 <img className="dropDownImg" src={Hamburger_icon} alt="Menu icon"></img>
                 <div className="dropdown-content">
-                            <Link to="/"><a>Kezdőlap</a></Link><br/>
-                            <Link to="/Lessons"><a>Leckék</a></Link><br/>
-                            <Link to="/Grammar"><a>Nyelvtan</a></Link>
+                            <Link className="menuLink" to="/">Kezdőlap</Link>
+                            <Link className="menuLink" to="/Lessons">Leckék</Link>
+                            <Link className="menuLink" to="/Grammar">Nyelvtan</Link>
+                            <Link className="menuLink" to="/A1">A1</Link>
+                            <Link className="menuLink" to="/A2">A2</Link>
                 </div>
             </div>
         </div>

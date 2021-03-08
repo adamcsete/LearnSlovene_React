@@ -2,6 +2,9 @@ import './App.css';
 import Lessons from './Lessons';
 import Grammar from './Grammar';
 import Menu from './Menu';
+import A1 from './lessons/A1';
+import A2 from './lessons/A2';
+
 import {
   BrowserRouter as Router,
   Route,
@@ -13,11 +16,13 @@ function App() {
     <Router>
       <div className = "App">
           <Menu/>
-          <switch>
+          <Switch>
             <Route path="/" exact component={Home} />
             <Route path="/Lessons" component={Lessons} />
             <Route path="/Grammar" component={Grammar} />
-          </switch>
+            <Route path="/A1" component={A1} />
+            <Route path="/A2" component={A2} />
+          </Switch>
       </div>
     </Router>
   );
