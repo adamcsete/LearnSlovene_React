@@ -1,11 +1,20 @@
 .App {
   text-align: center;
-  background-color: #005358;
+  background-color: #ffffff;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #003da5;
 }
+
+/*
+Slovenia Flag Colors:
+
+blue: #003DA5
+red: #D50032
+yellow: #FFCD00
+white: #FFFFFF;
+*/
