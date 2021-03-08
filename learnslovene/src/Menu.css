@@ -1,5 +1,8 @@
 .menuBar {
   font-family: "Lato", sans-serif;
+}
+
+.burger {
   padding-left: 0;
 }
 
@@ -8,11 +11,6 @@
   border-style: solid;
   border-width: thin;
   border-color: #000;
-}
-
-.lessonLink {
-  font-size: 20px;
-  display: none;
 }
 
 .sidenav {
@@ -30,20 +28,6 @@
   transition: 0.5s;
   padding-top: 60px;
 }
-
-.sidenav .menuLink {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #585858;
-  display: block;
-  transition: 0.3s;
-}
-
-.sidenav .menuLink:hover {
-  color: #f1f1f1;
-}
-
 .sidenav .closebtn {
   position: absolute;
   top: 0;
@@ -59,4 +43,33 @@
   .sidenav Link {
     font-size: 18px;
   }
+}
+
+/*Link hiding on hover*/
+
+.sidenav .menuLink {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #585858;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav .menuLink:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .lessonLink {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #585858;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav .lessonLink:hover {
+  color: #f1f1f1;
+  display: block;
 }
