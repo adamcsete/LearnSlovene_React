@@ -10,6 +10,11 @@
   border-color: #000;
 }
 
+.lessonLink {
+  font-size: 20px;
+  display: none;
+}
+
 .sidenav {
   height: 100%;
   width: 0;

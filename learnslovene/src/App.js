@@ -4,6 +4,11 @@ import Grammar from './Grammar';
 import Menu from './Menu';
 import A1 from './lessons/A1';
 import A2 from './lessons/A2';
+import A1_1 from './lessons/A1_1';
+import A1_2 from './lessons/A1_2';
+import A2_1 from './lessons/A2_1';
+import A2_2 from './lessons/A2_2';
+
 
 import {
   BrowserRouter as Router,
@@ -21,7 +26,11 @@ function App() {
             <Route path="/Lessons" component={Lessons} />
             <Route path="/Grammar" component={Grammar} />
             <Route path="/A1" component={A1} />
+            <Route path="/A1_1" component={A1_1} />
+            <Route path="/A1_2" component={A1_2} />
             <Route path="/A2" component={A2} />
+            <Route path="/A2_1" component={A2_1} />
+            <Route path="/A2_2" component={A2_2} />
           </Switch>
       </div>
     </Router>
