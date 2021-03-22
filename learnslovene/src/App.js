@@ -1,4 +1,4 @@
-import './App.css';
+import './styles/App.css';
 import Lessons from './Lessons';
 import Grammar from './Grammar';
 import Menu from './Menu';
@@ -8,11 +8,7 @@ import A1_1 from './lessons/A1_1';
 import A1_2 from './lessons/A1_2';
 import A2_1 from './lessons/A2_1';
 import A2_2 from './lessons/A2_2';
-import {
-  BrowserRouter as Router,
-  Route,
-  Switch,
-} from 'react-router-dom';
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 
 function App() {
   return (
