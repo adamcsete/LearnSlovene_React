@@ -1,6 +1,7 @@
 import './styles/App.css';
 import Lessons from './Lessons';
 import Grammar from './Grammar';
+import Dictionary from './Dictionary';
 import Menu from './Menu';
 import A1 from './lessons/A1';
 import A2 from './lessons/A2';
@@ -18,6 +19,7 @@ function App() {
           <Switch>
             <Route path="/" exact component={Home} />
             <Route path="/Lessons" component={Lessons} />
+            <Route path="/Dictionary" component={Dictionary} />
             <Route path="/Grammar" component={Grammar} />
             <Route path="/A1" exact component={A1} />
             <Route path="/A1/A1_1" component={A1_1} />

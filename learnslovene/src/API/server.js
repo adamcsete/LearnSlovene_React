@@ -26,6 +26,19 @@ app.get('/', (req, res) => {
 })
 
 //getting word from dictionary
+app.get('/dictionary/', (req, res) => {
+    let sql = `SELECT * FROM learnslovene.dictionary ORDER BY SLOword;`;
+    return con.query(sql, (err, result) =>   {
+        if (!(result.length > 0)) {
+            res.send("Nincs találat");
+        } 
+        else {
+            //const entries = result.map(result => {return result.SLOword + ' - ' + result.HUNword}) 
+            res.send(result);
+        }
+    }) 
+})
+
 app.get('/dictionary/slo/:word', (req, res) => {
         let sql = `SELECT * FROM learnslovene.dictionary WHERE SLOword LIKE '%${req.params.word}%';`;
         return con.query(sql, (err, result) =>   {

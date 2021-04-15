@@ -10,6 +10,11 @@ const MenuContent = [
         className: 'menuLink'
     },
     {
+        title: 'Szótár',
+        path: '/Dictionary',
+        className: 'menuLink'
+    },
+    {
         title: 'Nyelvtan',
         path: '/Grammar',
         className: 'menuLink'
