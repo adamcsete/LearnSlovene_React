@@ -26,13 +26,29 @@ app.get('/', (req, res) => {
 })
 
 //getting word from dictionary
-app.get('/dictionary/:word', (req, res) => {
-        let sql = `SELECT * FROM learnslovene.dictionary WHERE SLOword = ${req.params.word};`;
+app.get('/dictionary/slo/:word', (req, res) => {
+        let sql = `SELECT * FROM learnslovene.dictionary WHERE SLOword LIKE '%${req.params.word}%';`;
         return con.query(sql, (err, result) =>   {
-            //res.send(result)
-            console.log(result);
+            if (!(result.length > 0)) {
+                res.send("Nincs találat");
+            } 
+            else {
+                res.send(result[0].HUNword);
+            }
         }) 
-   
+})
+
+app.get('/dictionary/hun/:word', (req, res) => {
+    let sql = `SELECT * FROM learnslovene.dictionary WHERE HUNword LIKE '%${req.params.word}%';`;
+    return con.query(sql, (err, result) =>   {
+        if (!(result.length > 0)) {
+            res.send("Nincs találat");
+        } 
+        else {
+            res.send(result[0].SLOword);
+        }
+    }) 
+
 })
 
 app.listen(8080, err => {
